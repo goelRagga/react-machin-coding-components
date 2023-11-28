@@ -33,15 +33,14 @@ const Stopwatch = () => {
     const handleStop = () =>{
         setIsActive(false)
     }
-
     const handleReset = () =>{
         setIsActive(false);
         setTime(54000)
     }
+
     const handlePauseResume =() =>{
         setIsActive((prev)=>!prev)
     }
-
     
   const formatTime = (time) => {
     const hours = Math.floor(time / 3600)
