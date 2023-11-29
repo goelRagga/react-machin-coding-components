@@ -10,12 +10,15 @@ import InfiniteScroll from "./components/InfiniteScroll";
 export const App: FC<{ name: string }> = ({ name }) => {
 
   return (
-    <div>
+    <div >
      <Carousel />
      <Stopwatch />
      <Todo />
      <h3 style={{textAlign:"center"}}>Folder Structure / Nested Accordion </h3>
+     <div style={{marginTop:"4px", marginBottom:"4px"}}>
      <Accordion folderData={folderData}/>
+     </div>
+   
      <InfiniteScroll />
     </div>
   );
