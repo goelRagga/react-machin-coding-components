@@ -6,6 +6,7 @@ import Stopwatch from "./components/Stopwatch"
 import Todo from "./components/Todo";
 import Accordion from "./components/Accordion"
 import InfiniteScroll from "./components/InfiniteScroll";
+import TileProblem from "./components/TileProblem"
 
 export const App: FC<{ name: string }> = ({ name }) => {
 
@@ -18,7 +19,8 @@ export const App: FC<{ name: string }> = ({ name }) => {
      <div style={{marginTop:"4px", marginBottom:"4px"}}>
      <Accordion folderData={folderData}/>
      </div>
-   
+     <TileProblem />
+      
      <InfiniteScroll />
     </div>
   );
